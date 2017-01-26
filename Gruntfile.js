@@ -34,28 +34,28 @@ module.exports = function(grunt) {
         files: [
           {
             expand: true,
-            cwd: 'static/fonts/',
-            src: ['**'],
-            dest: 'static_built/fonts/'
+            cwd: 'static/css/',
+            src: ['app.css', 'app.css.map'],
+            dest: 'assets/css/'
           },
           {
             expand: true,
-            cwd: 'static/css/',
+            cwd: 'static/js/',
+            src: ['app.js'],
+            dest: 'assets/js/'
+          },
+          {
+            expand: true,
+            cwd: 'static/fonts/',
             src: ['**'],
-            dest: 'static_built/css/'
+            dest: 'assets/fonts/'
           },
           {
             expand: true,
             cwd: 'static/img/',
             src: ['**'],
-            dest: 'static_built/img/'
-          },
-          {
-            expand: true,
-            cwd: 'static/js/',
-            src: ['**'],
-            dest: 'static_built/js/'
-          },
+            dest: 'assets/img/'
+          }
         ]
       }
     },
@@ -97,7 +97,7 @@ module.exports = function(grunt) {
       }
     },
 
-    clean: ["static_built"]
+    clean: ["assets"]
   });
 
   grunt.loadNpmTasks('grunt-contrib-sass');
