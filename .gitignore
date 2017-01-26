@@ -17,3 +17,6 @@ node_modules
 npm-debug.log
 db.sqlite3
 assets
+static/js/app.js
+static/css
+static/fonts/*
