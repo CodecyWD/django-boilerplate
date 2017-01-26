@@ -1,0 +1,14 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Django Boilerplate</title>
+        <link href="{% static 'css/app.css' %}?{% include "_version" %}" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container" id="mainContainer">
+            {% block container %}{% endblock %}
+        </div>
+        <script src="{% static 'js/app.js' %}?{% include "_version" %}"></script>
+    </body>
+</html>
