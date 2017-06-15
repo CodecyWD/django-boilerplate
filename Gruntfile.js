@@ -6,6 +6,7 @@ module.exports = function(grunt) {
       options: {
         loadPath: [
           'node_modules/bootstrap-sass/assets/stylesheets',
+          'node_modules/bootstrap-social/',
           'node_modules/font-awesome/scss'
         ]
       },
