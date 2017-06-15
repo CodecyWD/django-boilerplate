@@ -6,6 +6,7 @@
         <link href="{% static 'css/app.css' %}?{% include "_version" %}" rel="stylesheet">
     </head>
     <body>
+        {% include "top_nav.html" %}
         <div class="container" id="mainContainer">
             {% block container %}{% endblock %}
         </div>
